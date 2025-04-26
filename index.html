@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Portfolio (HuuSang)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <link rel="icon" type="image/png" href="image/CoVN.png">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  
+    <div class="container">
+      <a class="navbar-brand text-primary fw-bold" href="#">@@Chalyntyn</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active text-light" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero d-flex align-items-center text-white">
+    <div class="container">
+      <div class="profile-container">
+        <div class="profile-left">
+          <img src="image/sang04.jpg" class="profile-img" alt="Van Tri" />
+        </div>
+        <div class="content-right">
+          <h1 class="fw-bold">Hi, I'm <span class="text-primary">Hữu Sang</span></h1>
+          <h2>I'm a <span class="text-primary" id="typed"></span></h2>
+          <p>I'm a creative professional currently working at <strong class="text-primary">ANBS Business Solution</strong>, specializing in visual storytelling through photography and design.</p>
+          <p>Explore my work and connect with me through my social profiles below.</p>
+          <div class="socials">
+            <a href="https://www.facebook.com/HuuSang.0912" class="text-white" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://github.com/HuuSang2002" class="text-white" title="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/chalyntyn_00" class="text-white" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white" title="Behance"><i class="bi bi-behance"></i></a>
+            <a href="#" class="text-white" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <button class="btn btn-outline-light">Contact Me</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">My <span class="text-primary">Skills</span></h2>
+      
+      <div class="skills-categories">
+        <!-- Web Development -->
+        <div class="skill-category animate__animated animate__fadeInUp">
+          <h3 class="category-title">Web Development</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-logo">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+              </div>
+              <div class="skill-info">
+                <h4>HTML5</h4>
+                <p class="skill-description">Basic knowledge of HTML5 and semantic markup, actively learning modern web development practices</p>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-logo">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+              </div>
+              <div class="skill-info">
+                <h4>CSS3</h4>
+                <p class="skill-description">Understanding of CSS3 fundamentals including Flexbox and Grid layouts, learning animations and responsive design</p>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-logo">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+              </div>
+              <div class="skill-info">
+                <h4>Bootstrap</h4>
+                <p class="skill-description">Familiar with Bootstrap framework for creating responsive layouts and components</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Programming Languages -->
+        <div class="skill-category animate__animated animate__fadeInUp">
+          <h3 class="category-title">Programming Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-logo">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+              </div>
+              <div class="skill-info">
+                <h4>JavaScript</h4>
+                <p class="skill-description">Basic understanding of JavaScript syntax and DOM manipulation, learning modern frameworks</p>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-logo">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+              </div>
+              <div class="skill-info">
+                <h4>.NET Framework</h4>
+                <p class="skill-description">Basic understanding of .NET Framework, learning web API integration</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
+</html>
