@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "Teky",
+			"path": "../../Teky"
+		},
+		{
+			"path": "../../Teky/Phần mềm quản lý học sinh"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Web cá nhân"
+	}
+}
