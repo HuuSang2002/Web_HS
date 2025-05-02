@@ -340,12 +340,16 @@
   opacity: 1;
   transform: translateY(0);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .category-title {
   font-size: 1.8rem;
   margin-bottom: 30px;
   padding-bottom: 10px;
-  border-bottom: 2px solid rgba(108, 99, 255, 0.3);
+  border-bottom: 2px solid rgba(108, 99, 255, 0.3); 
+  /* dòng này tạo 1 đường thăng nằm ngang màn hình  */
 }
 
 .skills-grid {
@@ -363,6 +367,14 @@
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+#skills {
+  scroll-margin-top: 70px;
+}
+
+#experiences {
+  scroll-margin-top: 70px;
+}
+
 
 .skill-item:hover {
   transform: translateY(-5px);
@@ -508,14 +520,27 @@
   animation: pulse 2s infinite;
 }
 
-.footer-brand h2 {
+/* .footer-brand h2 {
   font-size: 28px;
   margin-bottom: 5px;
   font-weight: 600;
   background: linear-gradient(to right, #00ffff, #0088ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+} */
+
+
+.footer-brand h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  background: linear-gradient(to right, #00ffff, #0088ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; /* Rất quan trọng để clip hoạt động */
 }
+
 
 .tagline {
   color: #aaa;
